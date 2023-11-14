@@ -2,6 +2,49 @@
 
 
 
+Directive |  Description               |       Example
+-----------------------------------------------
+%a        | weekday,short version      | Wed
+
+%A        | Weekday,full version       |Wednesday
+
+%w        |weekday as a number 0-6,    | 3
+            o is sunday
+
+%d        |Day of month 01-31          | 31
+
+%b        |Month name,short version    |Dec
+
+%B        |Month name,full version      |December
+
+%m        |Month as a number 01-12      | 12
+
+%y        | Year, short version,without  |18
+             century
+
+%Y        |Year,full version             |2018
+
+%H        |Hour 00-23                   | 17
+
+%I        |Hour  00-12                  |05
+
+%p        |AM/PM                        |PM
+
+%M        | Minute 00-59                |41
+
+%V       |ISO 8601 weeknumber            |01
+                (01-53)          
+.
+.
+.
+.
+.
+.
+.
+.
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Import the datetime module and display the current date.
@@ -18,10 +61,11 @@ Note: the date contains year,month,day,hour,minute,second and microsecond.
 
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 *The datetime module has many methods to return information about the date object.
+
 
 Eg2:
 import datetime
@@ -32,3 +76,30 @@ print(x.strftime("%A"))
 o/p:
 2023
 Tuesday
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+strftime() method:
+------------------
+
+The datetime object has a method for formatting date objects into readable strings.
+The method is called strftime(), and takes one parameter, format to specify the format of the returned string.
+
+
+
+Eg:
+import datetime
+x=datetime.datetime(2023,1,27)
+print(x.strftime("%B"))
+print(x.strftime("%b"))
+print(x.strftime("%a"))
+print(x.strftime("%A"))
+
+o/p:
+January
+Jan
+Fri
+Friday
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
