@@ -1,0 +1,34 @@
+*A date in python is not a data type of its own, but we can import a module named datetime to work with with dates aa date objects.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Import the datetime module and display the current date.
+
+Eg:
+import datetime
+x=datetime.datetime.now()
+print(x)
+
+o/p:
+2023-11-14 10:57:28.631767
+
+Note: the date contains year,month,day,hour,minute,second and microsecond.
+
+
+
+
+
+
+*The datetime module has many methods to return information about the date object.
+
+Eg2:
+import datetime
+x=datetime.datetime.now()
+print(x.year)
+print(x.strftime("%A"))
+
+o/p:
+2023
+Tuesday
